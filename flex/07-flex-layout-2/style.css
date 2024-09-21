@@ -1,5 +1,5 @@
 *{
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 
@@ -14,41 +14,68 @@ body {
 
 ul{
   list-style: none;
+  margin: 0%;
+  padding: 0%;
 }
 
 .middle{
   display: flex;
   flex-grow: 1;  
-  margin: 0px;
-  
 }
 
 .cards{
   display: flex;
   flex-wrap: wrap;
+  padding: 48px;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  /* flex-basis: 30%; */
 }
 
 .header {
-  height: 72px;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  border: 0px;
+  margin: 0px;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
+  display: flex;
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
-  width: 3000px;
+  flex-basis: 300px;
   background: royalblue;
   box-sizing: border-box;
   flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 16px;
+  padding-top: 16px;
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  flex: 1 0 25.3333%;
+}
+
+a{
+  text-decoration: none;
+  color: #eee;
+  font-size: 24px;
+  /* outline: 1px solid red; */
 }
